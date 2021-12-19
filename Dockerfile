@@ -1,4 +1,4 @@
-FROM arm64v8/golang:1.16-alpine AS build
+FROM arm64v8/golang:1.16-alpine3.15 AS build
 ADD . /src
 WORKDIR /src
 RUN go get -d -v
